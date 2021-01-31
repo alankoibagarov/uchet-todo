@@ -1,0 +1,9 @@
+const types = {
+  UPDATE_MODAL: "UPDATE_MODAL",
+  ADD_TASK: "ADD_TASK",
+  DELETE_TASK: "DELETE_TASK",
+  EDIT_TASK: "EDIT_TASK",
+  COMPLETE_TASK: "COMPLETE_TASK"
+};
+
+export default types;

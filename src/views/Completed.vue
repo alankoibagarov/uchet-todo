@@ -1,6 +1,6 @@
 <template>
   <div id="completed">
-    <Tasks type="completed" />
+    <Tasks type="completed" :tasks="tasksData" />
   </div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
   name: "completed",
   components: {
     Tasks
+  },
+  computed: {
+    tasksData() {
+      return this.$store.getters.tasks.filter(task => task.status === 1);
+    }
   }
 };
 </script>

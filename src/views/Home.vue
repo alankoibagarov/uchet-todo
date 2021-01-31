@@ -1,6 +1,6 @@
 <template>
   <div id="current">
-    <Tasks type="current" />
+    <Tasks type="current" :tasks="tasksData" />
   </div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
   name: "Home",
   components: {
     Tasks
+  },
+  computed: {
+    tasksData() {
+      return this.$store.getters.tasks.filter(task => task.status === 0);
+    }
   }
 };
 </script>

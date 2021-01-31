@@ -4,6 +4,7 @@
     <div class="container">
       <router-view />
     </div>
+    <Modal />
     <Footer />
   </div>
 </template>
@@ -31,10 +32,12 @@
 <script>
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Modal from "@/components/Modal";
 export default {
   components: {
     Navbar,
-    Footer
+    Footer,
+    Modal
   },
   data() {
     return {

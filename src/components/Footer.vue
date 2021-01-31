@@ -1,6 +1,6 @@
 <template>
   <nav id="footer" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Done by Alan Koibagarov</a>
+    <a class="navbar-brand" href="#">Made by Alan Koibagarov</a>
   </nav>
 </template>
 
