@@ -1,11 +1,11 @@
 <template>
-  <div id="current">
-    <Tasks type="current" />
+  <div id="completed">
+    <Tasks type="completed" />
   </div>
 </template>
 
 <style scoped>
-#current {
+#completed {
   width: 100%;
 }
 </style>
@@ -15,7 +15,7 @@
 import Tasks from "@/components/Tasks.vue";
 
 export default {
-  name: "Home",
+  name: "completed",
   components: {
     Tasks
   }
