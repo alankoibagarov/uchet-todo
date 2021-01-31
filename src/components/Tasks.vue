@@ -7,6 +7,7 @@
           type="button"
           class="btn btn-success"
           @click="updateModal('add')"
+          v-if="type === 'current'"
         >
           + Add
         </button>
