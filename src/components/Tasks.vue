@@ -16,11 +16,14 @@
     <div class="row">
       <div class="col-sm">
         <div class="card mb-3" v-for="task in tasks" :key="task.id">
-          <div class="card-header">
-            <div>
-              <h5 class="mb-0">{{ task.title }}</h5>
+          <div class="card-header row mx-0">
+            <div class="col-sm-6 px-0">
+              <h5>{{ task.title }}</h5>
             </div>
-            <div v-if="type === 'current'">
+            <div
+              v-if="type === 'current'"
+              class="col-sm-6 d-flex justify-content-end px-0"
+            >
               <button
                 type="button"
                 class="btn btn-primary"
